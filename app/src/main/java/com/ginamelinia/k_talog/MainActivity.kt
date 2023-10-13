@@ -28,16 +28,16 @@ class MainActivity : AppCompatActivity() {
         toggleButton = findViewById(R.id.toggleButton)
 
         val genres = listOf(
-            Genre("Slice of Life", listOf("Reply 1988", "My Mister", "When the Camelia Blooms", "Our Beloved Summer", "Because This is My First Love")) ,
-            Genre("Sageuk (Historical)", listOf("The Moon That Embraces the Sun", "Dong Yi", "Moon Lovers: Scarlet Heart Ryeo", "The Red Sleeve", "Moonlight Drawn by Clouds")),
+            Genre("Slice of Life", listOf("Reply 1988", "My Mister", "When the Camelia Blooms")) ,
+            Genre("Sageuk (Historical)", listOf("Moon Lovers: Scarlet Heart Ryeo", "The Red Sleeve", "Moonlight Drawn by Clouds")),
             Genre("Melodrama", listOf("Chocolate", "Encounter", "Now, We Are Breaking Up")),
-            Genre("Romantic Comedy", listOf("Fight for My Way", "What's Wrong with Secretary Kim?", "Strong Woman Do Bong Soon", "She Was Pretty", "Business Proposal")),
-            Genre("Thriller", listOf("Voice", "Signal", "Tunnel", "Innocent Defendant")),
+            Genre("Romantic Comedy", listOf("Fight for My Way", "Strong Woman Do Bong Soon", "Business Proposal")),
+            Genre("Thriller", listOf("Voice", "Signal", "Tunnel")),
             Genre("Action", listOf("The K2", "Vincenzo", "Vagabond")),
             Genre("Horror", listOf("Revenant", "Kingdom", "Let's Fight Ghost")),
-            Genre("Medical", listOf("The Doctors", "Doctor Stranger", "Good Doctor", "Hospital Playlist", "Romantic Doctor Teacher Kim")),
-            Genre("Law", listOf("Extraordinary Attorney Woo", "Partners for Justice", "Stranger", "Law School")),
-            Genre("Fantasy", listOf("My Love from the Star", "Goblin", "The Legend of the Blue Sea", "Hotel Del Luna", "W"))
+            Genre("Medical", listOf("Good Doctor", "Hospital Playlist", "Romantic Doctor Teacher Kim")),
+            Genre("Law", listOf("Extraordinary Attorney Woo", "Partners for Justice", "Law School")),
+            Genre("Fantasy", listOf("My Love from the Star", "Goblin", "Hotel Del Luna"))
         )
 
         adapter = GenreAdapter(genres) { genre ->
