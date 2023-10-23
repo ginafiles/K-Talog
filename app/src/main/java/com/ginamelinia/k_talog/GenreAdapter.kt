@@ -6,7 +6,10 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.button.MaterialButton
 
-class GenreAdapter(private val genres: List<Genre>, private val onItemClick: (Genre) -> Unit) : RecyclerView.Adapter<GenreAdapter.GenreViewHolder>() {
+class GenreAdapter(
+    private val genres: List<Genre>,
+    private val onItemClick: (Genre) -> Unit) :
+    RecyclerView.Adapter<GenreAdapter.GenreViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): GenreViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_genre, parent, false)

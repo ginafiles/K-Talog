@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/genreFragment">
+
+    <fragment
+        android:id="@+id/genreFragment"
+        android:name="com.ginamelinia.k_talog.GenreFragment"
+        android:label="fragment_genre"
+        tools:layout="@layout/fragment_genre" >
+        <argument
+            android:name="dramaList"
+            app:argType="string[]"
+            app:nullable="true"
+            android:defaultValue="@null" />
+        <action
+            android:id="@+id/action_genreFragment_to_dramaFragment"
+            app:destination="@id/dramaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dramaFragment"
+        android:name="com.ginamelinia.k_talog.DramaFragment"
+        android:label="fragment_drama"
+        tools:layout="@layout/fragment_drama">
+
+
+        <argument
+            android:name="dramaList"
+            app:argType="string[]"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+</navigation>

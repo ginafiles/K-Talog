@@ -21,8 +21,8 @@ class DramaActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
 
 
-        val string = intent?.getStringExtra(MainActivity.EXTRA_GENRE)
-        val arrayList = intent?.getStringArrayListExtra(MainActivity.EXTRA_DRAMA_LIST)
+        val string = intent?.getStringExtra(GenreActivity.EXTRA_GENRE)
+        val arrayList = intent?.getStringArrayListExtra(GenreActivity.EXTRA_DRAMA_LIST)
 
         textIntent?.text = string
         dramaButton = arrayList

@@ -13,6 +13,9 @@
         android:theme="@style/Theme.KTalog"
         tools:targetApi="31">
         <activity
+            android:name=".GenreActivity"
+            android:exported="false" />
+        <activity
             android:name=".DramaActivity"
             android:exported="false" />
         <activity

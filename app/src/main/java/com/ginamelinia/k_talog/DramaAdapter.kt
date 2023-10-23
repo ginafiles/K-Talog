@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.button.MaterialButton
 
-class DramaAdapter(private val dramaList: ArrayList<String>) : RecyclerView.Adapter<DramaAdapter.DramaViewHolder>() {
+class DramaAdapter(private val dramaList: List<String>) : RecyclerView.Adapter<DramaAdapter.DramaViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DramaViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_drama, parent, false)
         return DramaViewHolder(view)
